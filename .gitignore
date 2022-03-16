@@ -1,0 +1,17 @@
+# push 안할 폴더 목록
+figma-sketch/
+
+
+# push 안할 파일 목록
+*.psd
+*.fig
+*.jpg
+*.mp4
+*.wmv
+*.mp3
+*.ogg
+*.pdf
+*.hwp
+*.xls
+*.xlsm
+*.xlsx
