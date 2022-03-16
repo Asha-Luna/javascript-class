@@ -7,4 +7,4 @@
 - 제어문 (control statement) : 진행중
 
 # mission
-- p. 58 mission I, II 
+- p. 58 mission I, II [finished]
