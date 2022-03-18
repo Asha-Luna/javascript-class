@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도전 MISSION</title>
+    <style>
+        table, td {
+            border: 1px solid #333;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        td {
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>3장. 제어문 도전 Mission</h1>
+    <P>while 반복문을 이용하여, 구구단중 5단을 출력하세요</P>
+    <script>
+
+
+        /*
+        반복되는것 : 반복문 / 변하는 것 : 변수, 연산결과
+        5 x 1 = 5
+        5 x 2 = 10
+        5 x 4 = 20
+        5 x 5 = 25
+        5 x 6 = 30
+        5 x 7 = 35
+        5 x 8 = 40
+        5 x 9 = 45
+        */
+
+        /*
+        var dan = 5; // 1.while 반복 변수 선언 -> 단 수 (나중에 변경할수 있음)
+        var i = 1; // 반복 변수
+        var total = 0; // 구구단 합계
+        while(i < 10) {  // 조건식
+            document.write(dan+" x "+i+" = "+(dan * i), "<br>"); // 실행코드;
+            total += dan * i; // total = total + (dan * i);
+            i++; // 증감연산자;
+        } 
+        document.write("================= END =================", "<br>");
+        document.write("합계 : "+total, "<br>");
+        */
+
+        
+    </script>
+
+    <h1>3장. 제어문 도전Mission</h1>
+    <p>5행 5열의 표를 만들고, 데이터가 1부터 25까지 출력되도록 작성</p>
+    <p>중첩 for문에 대해서 알아야 더 쉽게 해결됩니다.</p>
+
+    <script>
+        // 단순 for vs 중첩 for : for문을 한번만 vs for문 안에 for문 
+        // p. 82 중첩for문 형식
+        
+        /*
+        for(초기값;조건식;증감식){
+            for(초기값;조건식;증감식){
+                for(초기값;조건식;증감식){
+                    실행코드;
+                }
+            }
+        }
+        */
+       
+       
+        // p.82 코딩해보세요!
+       /*
+        for(var i=1; i<= 5; i++) {
+           for(var j=1; j<=5; j++) {
+               document.write(i+"행, "+j+"열", "<br>");         
+            }
+       }
+       */
+        /*
+        document.write("===================END=================", "<br>");
+        document.write("진짜 i : "+i, "<br>");
+        */
+
+
+        // p.84 중첩 for문 미션
+        // 5행 5열, 데이터가 1~25가 출력되도록
+        var num = 1;
+        var t = "<table border=\"1\">";
+        for(var i=1; i<=5; i++){
+            t+= "<tr>";
+            for(var j=1; j<=5; j++) {
+                t += "<td>"+num+"</td>";
+                num++;
+            }
+            t += "</tr>"
+        }        
+        // 문제해결을 위한 과정...
+        
+        t += "</table>";
+        document.write(t, "<br>"); // 화면에 출력(body)
+        console.log(t); // 콘솔 tab에 보여짐
+    
+    
+    </script>
+</body>
+</html>
